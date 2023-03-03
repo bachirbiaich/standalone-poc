@@ -63,8 +63,8 @@
               "namedChunks": true
             },
             "standalone": {
-              "tsConfig": "mock/mock-standalone/tsconfig.app.standalone.json",
-              "main": "mock/mock-standalone/main.standalone.ts",
+              "tsConfig": "mock/standalone/override/tsconfig.app.standalone.json",
+              "main": "mock/standalone/override/main.standalone.ts",
               "buildOptimizer": false,
               "optimization": false,
               "vendorChunk": true,

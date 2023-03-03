@@ -4,6 +4,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CheckComponent } from './check/check.component';
+import {CheckOneComponent} from "./check-one/check-one.component";
+import {CheckOneService} from "./check-one/check-one.service";
+import {TwoModule} from "./two/two.module";
+import {TreeComponent} from "./tree/tree.component";
 
 @NgModule({
   declarations: [
@@ -12,9 +16,12 @@ import { CheckComponent } from './check/check.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CheckOneComponent,
+    TwoModule,
+    TreeComponent
   ],
-  providers: [],
+  providers: [CheckOneService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
