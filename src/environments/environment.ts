@@ -2,8 +2,11 @@
 // `ng build` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 
+import {GatewayVersion} from "../app/core/auth/gateway/gateway.enums";
+
 export const environment = {
-  production: false
+  production: false,
+  gatewayVersion: GatewayVersion.V1_2
 };
 
 /*
